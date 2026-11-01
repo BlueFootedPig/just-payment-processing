@@ -1,0 +1,86 @@
+{
+  "name": "just-payment-processing",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "bluefootedpig",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlueFootedPig/just-payment-processing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BlueFootedPig/just-payment-processing/issues"
+  },
+  "homepage": "https://github.com/BlueFootedPig/just-payment-processing#readme",
+  "private": false,
+  "description": "Algorand crypto payment checkout popup for React merchant sites.",
+  "main": "./dist/just-payment-processing.umd.js",
+  "module": "./dist/just-payment-processing.es.js",
+  "types": "./dist/module.d.ts",
+  "style": "./dist/just-payment-processing.css",
+  "files": [
+    "dist",
+    "DONATE.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/module.d.ts",
+      "import": "./dist/just-payment-processing.es.js",
+      "require": "./dist/just-payment-processing.umd.js"
+    },
+    "./style.css": "./dist/just-payment-processing.css"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "overrides": {
+    "esbuild": "^0.28.1"
+  },
+  "dependencies": {
+    "@txnlab/use-wallet-exodus": "^5.0.0",
+    "@txnlab/use-wallet-pera": "^5.0.0",
+    "@txnlab/use-wallet-react": "^5.0.0",
+    "algosdk": "^3.7.0",
+    "buffer": "^6.0.3"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "scripts": {
+    "start": "vite --config vite.demo.config.ts",
+    "build": "npm run build:demo && npm run build:lib",
+    "build:demo": "vite build --config vite.demo.config.ts",
+    "build:lib": "vite build",
+    "test": "vitest run",
+    "prepack": "npm run build:lib",
+    "pack:local": "npm pack"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.5",
+    "@types/node": "^22.12.0",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^5.1.2",
+    "jsdom": "^30.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^4.9.5",
+    "vite": "^7.3.5",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^4.1.11"
+  }
+}

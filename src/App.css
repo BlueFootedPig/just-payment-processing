@@ -1,0 +1,97 @@
+.App {
+  align-content: center;
+  min-height: 100vh;
+  background: #f4f6f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #17202a;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.checkout {
+  width: min(100%, 520px);
+  background: #ffffff;
+  border: 1px solid #d8dee4;
+  border-radius: 8px;
+  box-shadow: 0 18px 45px rgba(23, 32, 42, 0.12);
+  padding: 24px;
+}
+
+.checkout-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 18px;
+}
+
+.checkout-header h1 {
+  font-size: 1.5rem;
+  margin: 0 0 4px;
+}
+
+.checkout-header p {
+  margin: 0;
+  color: #667085;
+}
+
+.checkout-total {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.checkout-section {
+  padding: 20px 0;
+}
+
+.checkout-section h2 {
+  font-size: 1rem;
+  margin: 0 0 12px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #d8dee4;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.payment-option input {
+  width: 18px;
+  height: 18px;
+}
+
+.payment-option span {
+  display: grid;
+  gap: 2px;
+}
+
+.payment-option small {
+  color: #667085;
+}
+
+.checkout-pay-button {
+  width: 100%;
+  padding: 14px 18px;
+  background: #17202a;
+  color: #ffffff;
+  border: 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.donation-page { line-height: 1.6; }
+.donation-page-badge { display: inline-block; color: #581c87; font-weight: 700; }
+.donation-page-network { padding: 12px; background: #f3e8ff; border-radius: 8px; color: #581c87; font-weight: 600; }
+.donation-page-address { overflow-wrap: anywhere; font-family: monospace; font-size: 0.85rem; }
+.donation-page .checkout-pay-button:disabled { opacity: 0.55; cursor: not-allowed; }
+
