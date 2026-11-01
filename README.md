@@ -2,7 +2,7 @@
 
 A browser checkout module for direct Algorand payments with a receipt attached to the payment transaction.
 
-Created by **bluefootedpig** · [MIT license](LICENSE) · **[Donate to support development](DONATE.md)**
+Created by **bluefootedpig** · [MIT license](LICENSE) · [Download v0.1.0 preview](https://github.com/BlueFootedPig/just-payment-processing/releases/tag/v0.1.0) · **[Donate to support development](DONATE.md)**
 
 Donation wallet (Algorand): `VJVQKGORMMHVVA2W3OEODQTRNY6YQ73MRZYUYJVT3YHO3C6VVJK7YHQLBM`. MainNet USDC donations are pending recipient opt-in; see the donation guide before sending tokens. No hosted checkout URL is available yet.
 
